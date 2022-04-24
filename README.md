@@ -13,7 +13,7 @@ This code can be run in several different ways. Initially, it was solely meant f
 
 If you're attempting to recreate the entire code for yourself, either for understanding or learning purposes, I recommend using the file for the Jetson Nano and running it through a code editor (I used Visual Studio Code). 
 
-If you're just planning on running the code and testing it out, feel free to copy the code into your own code editor, or using my google colab with the link below. 
+If you're just planning on running the code and testing it out, feel free to copy the code into your own code editor, or using my google colab with this link: 
 https://tinyurl.com/Shikuri-Breaker
 
 ## Materials
