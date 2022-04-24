@@ -8,7 +8,7 @@ from gtts import gTTS
 import sys
 import os
 
-#Camera width Constants
+#Camera size constants
 dW=224
 dH=224
 flip=2
@@ -32,13 +32,14 @@ end_time = time.time() + 60 * minutes_running
 
 #Cascade Face Download: https://github.com/opencv/opencv/blob/27c15bed601b9dd8e808d0fc1958001a6d123299/data/haarcascades/haarcascade_frontalface_default.xml
 #Cascade Eye Download: https://github.com/opencv/opencv/blob/27c15bed601b9dd8e808d0fc1958001a6d123299/data/haarcascades/haarcascade_eye.xml
+
 face_cascade = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('data/haarcascades/haarcascade_eye.xml')
 
 facesSpotted = 0
 totalFaces = 0
 
-#Code is set to take 240 checks every 20 minutes and reset when done
+#Main code for running camera face recognition
 while (time.time() < end_time) < 1200:
     ret, frame = cam.read()
     gray=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -75,9 +76,9 @@ while (time.time() < end_time) < 1200:
     cv2.imshow('Breaker',frame)
     if cv2.waitKey(1)==ord('q'):
         break
-        
+#Results Analysis  
 text = ""
-if(num_of_faces > (num_of_pictures_taken*0.75)):
+if(facesSpotted > (totalFaces*0.75)):
   t2 = "You need to take a break for " + str(minutes_running*0.25) + " minutes"
   text = "It's time to get up and take a break!"
   print(text)
@@ -92,4 +93,3 @@ Audio(filename, autoplay = True)
 
 cam.release()
 cv2.destroyAllWindows() 
-    
