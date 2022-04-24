@@ -20,7 +20,7 @@ import os
 #Variables Assignment
 num_of_faces = 0
 num_of_pictures_taken = 0
-minutes_running = 2
+minutes_running = 20 #Time default is set to 20 minutes
 end_time = time.time() + 60 * minutes_running
 face_cascade = cv2.CascadeClassifier(cv2.samples.findFile(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'))
 
