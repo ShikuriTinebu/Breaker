@@ -1,7 +1,6 @@
 import cv2
 import time
 import numpy as np
-from pandas import notnull
 from adafruit_servokit import Servokit
 from IPython.display import display, Javascript, Image, Audio
 from gtts import gTTS
@@ -40,7 +39,7 @@ facesSpotted = 0
 totalFaces = 0
 
 #Main code for running camera face recognition
-while (time.time() < end_time) < 1200:
+while (time.time() < end_time):
     ret, frame = cam.read()
     gray=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
