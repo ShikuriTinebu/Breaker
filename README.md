@@ -27,4 +27,4 @@ https://tinyurl.com/Shikuri-Breaker
 
 
 ## Inspiration
-My parents who always nagged me about too much time on the computer. As someone a modern teen who enjoys programming, staying away from the computer is a difficult task which comes with several drawbacks. That's why, I decided to create this program to help anyone who has similar problems.
+My parents who always nagged me about too much time on the computer. As someone a modern teen who enjoys programming, staying away from the computer is a difficult task despite knowing that its continuous usage comes with several drawbacks. That's why I decided to create this program to help anyone who has similar problems.
