@@ -11,10 +11,16 @@ When the program is run, the camera is open and uses facial recognition from haa
 ## Accessibility
 This code can be run in several different ways. Initially, it was solely meant for the Jetson Nano (a mini computer similar to the raspberry pi which was designed specifically for Artificial Intellegence and Machine Learning), however for easier accessibility for potential users, I created a far simpler version which can be run almost anywhere. The Jetson Nano specified code requires a flashed SD card, a machine, webcam, cables, and significantly more package installations, however has a much simpler code. On the other hand, the generalized version has far better versatility, but its code is much more complex, concurrenlty using multiple coding languages to function.  
 
-If you're attempting to recreate the entire code for yourself, either for understanding or learning purposes, I recommend using the file for the Jetson Nano and running it through a code editor (I used Visual Studio Code). 
+The file for generalized code editors is called breaker0.py
+The file for use on Jetson Nano is called breakerNano.py
+
 
 If you're just planning on running the code and testing it out, feel free to copy the code into your own code editor, or using my google colab with this link: 
 https://tinyurl.com/Shikuri-Breaker
+
+If you're attempting to recreate the entire code for yourself, either for understanding or learning purposes, I recommend using the file for the Jetson Nano and running it through a code editor (I used Visual Studio Code). 
+
+
 
 ## Materials
 1. Computer
