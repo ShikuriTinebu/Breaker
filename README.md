@@ -1,6 +1,7 @@
 # Breaker
 Welcome to Breaker!
 Breaker is a program created by Rishik Buneti which uses Artificial Intelligence to help the user allocate times for computer usage and breaks. 
+
 Walkthrough Video: https://youtu.be/nyp9rpTMiuM
 
 ## Overview
